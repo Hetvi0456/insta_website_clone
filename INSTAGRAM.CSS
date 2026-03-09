@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.instacontainer {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+}
+
+.left {
+    width: 20%;
+    height: 100%;
+    background-color: #f4f4f4;
+    position: fixed;
+    left: 0;
+}
+
+.logo {
+    display: flex;
+    
+}
+
+.right
+{
+    width : 80%;
+    height: 100%;
+    background-color: red;
+    position: fixed;
+    right: 0;
+    display: flex;
+}
+
+.topnav {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    background-color: #f6f6f6;
+    display: flex;
+}
+
+.nav {
+    width: calc(80%/2);
+    height: 100%;
+}
+
+.topnavleft {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    
+}
+
+.topnavleft input {
+    width: 400px;
+    padding: 10px 10px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+}
+
+.topnavright {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.topnavright button {
+    padding: 10px 20px ;
+}
+
+.bottomnav {
+    width: 100%;
+    position: fixed;
+    top: 10%;
+    background-color: #f6f6f6;
+}
+
+.bottomnav p {
+    font-size: 24px;
+}
+
+.storiescontainer {
+    width: 100%;
+    height : 10vh;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    scrollbar-width: none;
+}
+
+.storycontainer {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column; 
+    margin-top: 5px;
+    padding: 5px;
+    gap: 2px;
+    flex-shrink: 0;
+}
+
+.storycontainer h4 {
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    padding-left: 2px;
+}
+
+.storycircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.storycircle img {
+    width: 100%;
+    height: 100%;
+}
